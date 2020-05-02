@@ -10,7 +10,6 @@ import '@/assets/style.css';
 
 const ringOne = () => {
   const audio = new Audio('/bell1.ogg');
-  console.log('ringOne');
   audio.play();
 }
 
