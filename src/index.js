@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/assets/singing-bell.jpg';
 import '@/assets/bell1.ogg';
 import '@/assets/bell1.mp3';
+import '@/assets/style.css';
 
 
 $('#ringOne').on('click', () => {
