@@ -8,13 +8,17 @@ import '@/assets/bell1.ogg';
 import '@/assets/bell1.mp3';
 import '@/assets/style.css';
 
-
-$('#ringOne').on('click', () => {
-  // <audio>
-  //    <source src="bell1.ogg" type="audio/ogg">
-  //    <source src="bell1.mp3" type="audio/mpeg">
-  //   Your browser does not support the audio element. <a href="https://browsehappy.com/">https://browsehappy.com/</a>
-  // </audio>
-  let audio = new Audio('/bell1.ogg');
+const ringOne = () => {
+  const audio = new Audio('/bell1.ogg');
+  console.log('ringOne');
   audio.play();
+}
+
+
+$('#ringOne').on('click', ringOne);
+
+$(document).on('keypress', (e) => {
+  if(e.which === 49) { // 1
+    ringOne();
+  }
 })

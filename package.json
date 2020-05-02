@@ -19,6 +19,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
+    "jquery.hotkeys": "^0.1.0",
     "url-loader": "^4.1.0"
   },
   "scripts": {
