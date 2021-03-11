@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: path.join(__dirname, 'docs'),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
     watchContentBase: true,
@@ -32,7 +32,7 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(mp3|ogg)$/i,
+        test: /\.(mp3|ogg|wav)$/i,
         use: [{
           loader: 'file-loader',
           options: {

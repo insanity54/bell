@@ -10,8 +10,11 @@
     "bootstrap": "^4.5.0",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "howler": "^2.2.1",
     "html-loader": "^1.1.0",
     "jquery": "^3.5.1",
+    "mvp.css": "^1.6.3",
     "popper.js": "^1.16.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
@@ -25,7 +28,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "npm run build && caprover deploy --caproverName captain-01 --branch main --appName bell"
   },
   "repository": {
     "type": "git",
